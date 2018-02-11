@@ -21,16 +21,20 @@ import "phoenix_html";
 import socket from "./socket";
 
 import run_demo from "./demo";
+import run_index from "./index";
+
 
 function init() {
   let root = document.getElementById('game');
-  if (!root) {
-    return;
+  let idx = document.getElementById('index');
+  if (root) {
+    // Now that you are connected, you can join channels with a topic:
+    let channel = socket.channel("games:" + gameName, {});
+    run_demo(root, channel);
   }
-
-  // Now that you are connected, you can join channels with a topic:
-  let channel = socket.channel("games:" + gameName, {});
-  run_demo(root, channel);
+  if (idx) {
+    run_index(idx);
+  }
 }
 
 // Use jQuery to delay until page loaded.

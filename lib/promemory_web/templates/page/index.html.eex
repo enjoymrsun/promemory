@@ -1,5 +1,9 @@
 <h1>Pro Memory Game! By Xiangshi Sun</h1>
 <h2>You can preserve multiple game progresses!</h2>
-<h2>Join a game with name: demo.</h2>
+<h2>Join a game with the name you want: </h2>
+<div id="index">
+  Take a rest and enjoy...
+</div>
+<h2>OR you can play the default demo game:</h2>
 <h3><a href="/games/demo">Join demo!</a></h3>
 <h5>You can start a new game by change demo to whatever you want in URL!</h5>

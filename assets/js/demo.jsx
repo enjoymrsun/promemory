@@ -41,7 +41,7 @@ class Board extends React.Component {
       window.setTimeout(() => {
         this.channel.push("compare", {})
           .receive("ok", this.gotView.bind(this));
-      }, 2000);
+      }, 1200);
     }
   }
 
