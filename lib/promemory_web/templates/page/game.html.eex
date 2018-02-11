@@ -1,0 +1,10 @@
+<script>
+  window.gameName = "<%= @game_name %>";
+</script>
+
+<h1>Pro Memory Game! By Xiangshi Sun</h1>
+<h2>The current game name is: <%= @game_name %>, check the URL!</h2>
+
+<div id="game">
+  Loading...
+</div>
